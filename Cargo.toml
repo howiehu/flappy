@@ -3,8 +3,16 @@ name = "flappy"
 version = "0.1.0"
 authors = ["Hao Hu <huhao@outlook.com>"]
 edition = "2021"
+description = "A flappy-like game demo for game development study."
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
 bracket-lib = "~0.8.7"
+
+[[bin]]
+name = "flappy"
+path = "src/main.rs"
+
+[package.metadata.bundle]
+identifier = "study.huhao.game.flappy"
